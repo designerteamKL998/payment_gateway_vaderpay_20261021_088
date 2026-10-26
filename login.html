@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Login Demo | Payment Gateway</title>
+  <link rel="stylesheet" href="bank-login.css">
+</head>
+<body>
+<main class="page">
+  <section class="gateway">
+    <div class="info-side">
+      <div class="bank-logo">
+        <img src="assets/bank/login-bank/bank_publicbank.svg" alt="Public Bank" class="pb-icon" id="bankLogo">
+      </div>
+
+      <div class="transaction-card">
+        <div class="transaction-top">
+          <div>
+            <strong>998Bet Deposit</strong>
+            <span>Payment to 998BET</span>
+          </div>
+          <div class="amount">
+            <span>Amount</span>
+            <strong>MYR 100.00</strong>
+          </div>
+        </div>
+        <div class="transaction-meta">
+          <div>
+            <span>Transaction Ref</span>
+            <strong>BP15Q53UC9WOEI3 <button class="copy-btn" type="button"><img src="assets/payment_gateway/copy-icon_white.svg" alt="Copy"></button></strong>
+          </div>
+          <div>
+            <span>Created Time</span>
+            <strong>2026-09-03 03:28:57</strong>
+          </div>
+        </div>
+        <button class="transaction-details" type="button" id="detailsToggle">
+          Transaction Details <img src="assets/payment_gateway/icn-dropdown-w.svg" alt="">
+        </button>
+        <div class="details-content" id="detailsContent">
+            <ul style="margin-left: -26px;">
+                <li>Payment Method: Online Transfer</li>
+                <li>Payment Channel: VADERPAY</li>
+                <li>Package: No Bonus</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="stepper">
+        <div class="step active"><div class="step-circle">1</div><span>Scan QR Code</span></div>
+        <div class="step-line step-line--animated"><i></i><i></i><i></i><i></i></div>
+        <div class="step"><div class="step-circle">2</div><span>Make Payment</span></div>
+        <div class="step-line"><i></i><i></i><i></i><i></i></div>
+        <div class="step"><div class="step-circle">3</div><span>Payment Confirmed</span></div>
+      </div>
+    </div>
+
+    <div class="form-side">
+      <form id="loginForm" novalidate>
+        <a class="back-to-banks" href="index.html">← Back to bank selection</a>
+        <div class="field">
+          <div class="field-head"><label for="username">Username</label><a href="#" class="help-link">Forgot Username?</a></div>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+            <input id="username" type="text" placeholder="Enter your username" autocomplete="username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-head"><label for="password">Password</label><a href="#" class="help-link">Forgot Password?</a></div>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password">
+          </div>
+        </div>
+        <button class="next-btn" type="submit">Login</button>
+        <button class="notes-toggle" id="notesToggle" type="button">
+          <span class="notes-left"><img src="assets/payment_gateway/icn-important2.svg" alt="">Important Notes</span>
+          <img class="notes-arrow" src="assets/payment_gateway/icn-dropdown.svg" alt="">
+        </button>
+        <div class="notes-content" id="notesContent">
+            <ul>
+              <li>Kindly ensure your bank account has been activated for online payment processing.</li>
+              <li>Kindly ensure that you have sufficient funds in the account.</li>
+              <li>Kindly ensure that you have entered the correct ID and password.</li>
+              <li>Please do not click on any submit button more than once.</li>
+              <li>Please do not refresh your browser.</li>
+              <li>Please take note of the reference number if any event you need to contact our Customer Service for further action.</li>
+            </ul>
+          </div>
+      </form>
+
+      <div class="trust-row">
+        <div class="trust-item"><img src="assets/payment_gateway/icn-secure.svg" alt=""><strong>100% Secure Payment</strong><span>Your data is fully encrypted</span></div>
+        <div class="trust-item"><img src="assets/payment_gateway/icn-fast.svg" alt=""><strong>Fast &amp; Reliable</strong><span>Your data is fully encrypted</span></div>
+        <div class="trust-item"><img src="assets/payment_gateway/icn-support.svg" alt=""><strong>24×7 Support</strong><span>Our team is always be with you</span></div>
+      </div>
+      <img class="vaderpay-logo" src="assets/payment_gateway/logo-vaderpay.svg" alt="VaderPay">
+    </div>
+  </section>
+</main>
+<script src="login.js"></script>
+</body>
+</html>

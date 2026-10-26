@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VADERPAY Payment Gateway</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="gateway">
+
+    <!-- Desktop left information column -->
+    <aside class="desktop-sidebar">
+      <div class="transfer-intro">
+        <img src="assets/payment_gateway/icn-onlineTransfer.svg" alt="">
+        <div>
+          <strong>Online Transfer</strong>
+          <span>Your data is fully encrypted</span>
+        </div>
+      </div>
+
+      <section class="payment-card">
+        <h2>Payment Details</h2>
+
+        <div class="detail-row">
+          <span>Payment Method</span>
+          <strong><img src="assets/wallet_square/fpx.svg" alt="">Online Transfer</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Payment Channel</span>
+          <strong><img src="assets/vaderpaylogo.svg" alt="">VADERPAY</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Package</span>
+          <strong>No Bonus</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Date &amp; Time</span>
+          <strong>10/09/2026 13:01:49</strong>
+        </div>
+
+        <div class="detail-row amount">
+          <span>Amount</span>
+          <strong>RM 100.00</strong>
+        </div>
+      </section>
+
+      <button class="desktop-notes" id="desktopNotes" type="button">
+        <span>
+          <img src="assets/payment_gateway/icn-important.svg" alt="">
+          Important Notes
+        </span>
+        <img class="notes-dropdown-icon" src="assets/payment_gateway/icn-dropdown-w.svg" alt="">
+      </button>
+
+      <div class="desktop-notes-content" id="desktopNotesContent">
+        <ul>
+          <li>Kindly ensure your bank account has been activated for online payment processing.</li>
+          <li>Kindly ensure that you have sufficient funds in the account.</li>
+          <li>Kindly ensure that you have entered the correct ID and password.</li>
+          <li>Please do not click on any submit button more than once.</li>
+          <li>Please do not refresh your browser.</li>
+          <li>Please take note of the reference number if any event you need to contact our Customer Service for further action.</li>
+        </ul>
+      </div>
+
+      <div class="desktop-support">
+        <div class="support-row">
+          <img src="assets/payment_gateway/icn-secure.svg" alt="">
+          <div><strong>100% Secure Payment</strong><span>Your data is fully encrypted</span></div>
+        </div>
+        <div class="support-row">
+          <img src="assets/payment_gateway/icn-fast.svg" alt="">
+          <div><strong>Fast &amp; Reliable</strong><span>Your data is fully encrypted</span></div>
+        </div>
+        <div class="support-row">
+          <img src="assets/payment_gateway/icn-support.svg" alt="">
+          <div><strong>24X7 Support</strong><span>Our team is always be with you</span></div>
+        </div>
+      </div>
+
+      <img class="desktop-logo-bottom" src="assets/payment_gateway/logo-vaderpay.svg" alt="Vaderpay">
+    </aside>
+
+    <!-- Main bank-selection panel -->
+    <section class="bank-shell">
+      <div class="stepper">
+        <div class="step active"><b>1</b><span>Login</span></div>
+        <div class="step"><b>2</b><span>Authorize</span></div>
+        <div class="step"><b>3</b><span>Receipt</span></div>
+      </div>
+
+      <div class="session-timer">
+        <img src="assets/payment_gateway/icn-timer.svg" alt="">
+        <span></span>
+        <strong id="timer">04:16</strong>
+      </div>
+
+      <div class="bank-heading">
+        <h1>Select Your Payment Bank</h1>
+        <p>Choose a bank below to proceed.</p>
+      </div>
+
+      <h2 class="supported-title">Supported Banks</h2>
+
+      <div class="bank-grid" id="bankGrid"></div>
+      <div class="dots" id="dots"></div>
+
+      <button class="continue-btn" id="continueBtn" type="button">
+        <span>Continue with <span id="selectedBankLabel">Maybank</span></span>
+        <img src="assets/payment_gateway/icn-arrow.svg" alt="">
+      </button>
+
+      <!-- Mobile-only payment details -->
+      <section class="mobile-payment-card">
+        <h2>Payment Details</h2>
+
+        <div class="mobile-detail-row">
+          <span>Payment Method</span>
+          <strong><img src="assets/wallet_square/fpx.svg" alt="">Online Transfer</strong>
+        </div>
+        <div class="mobile-detail-row">
+          <span>Payment Channel</span>
+          <strong><img src="assets/vaderpaylogo.svg" alt="">VADERPAY</strong>
+        </div>
+        <div class="mobile-detail-row">
+          <span>Package</span>
+          <strong>No Bonus</strong>
+        </div>
+        <div class="mobile-detail-row">
+          <span>Date &amp; Time</span>
+          <strong>10/09/2026 13:01:49</strong>
+        </div>
+        <div class="mobile-detail-row amount">
+          <span>Amount</span>
+          <strong>RM 100.00</strong>
+        </div>
+      </section>
+
+      <button class="mobile-continue" id="mobileContinue" type="button">
+        <span>Continue</span>
+        <img src="assets/payment_gateway/icn-arrow.svg" alt="">
+      </button>
+
+      <button class="mobile-important" id="mobileImportant" type="button">
+        <span>Important Notes</span>
+        <img class="notes-dropdown-icon" src="assets/payment_gateway/icn-dropdown-w.svg" alt="">
+      </button>
+
+      <div class="mobile-notes-content" id="mobileNotesContent">
+        <ul>
+          <li>Kindly ensure your bank account has been activated for online payment processing.</li>
+          <li>Kindly ensure that you have sufficient funds in the account.</li>
+          <li>Kindly ensure that you have entered the correct ID and password.</li>
+          <li>Please do not click on any submit button more than once.</li>
+          <li>Please do not refresh your browser.</li>
+          <li>Please take note of the reference number if any event you need to contact our Customer Service for further action.</li>
+        </ul>
+      </div>
+
+      <div class="mobile-support">
+        <div><img src="assets/payment_gateway/icn-secure.svg" alt=""><strong>Secure Payment</strong></div>
+        <div><img src="assets/payment_gateway/icn-fast.svg" alt=""><strong>Fast &amp; Reliable</strong></div>
+        <div><img src="assets/payment_gateway/icn-support.svg" alt=""><strong>24X7 Support</strong></div>
+      </div>
+
+      <img class="mobile-logo-bottom" src="assets/payment_gateway/logo-vaderpay.svg" alt="Vaderpay">
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

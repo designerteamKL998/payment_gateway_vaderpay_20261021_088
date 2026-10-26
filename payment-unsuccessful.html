@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Payment Unsuccessful</title>
+    <link rel="stylesheet" href="style-QR.css">
+    <style>
+        .unsuccess-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 18px;
+            background: var(--bg,#0b0b0f);
+            color: #fff;
+            font-family: inherit;
+        }
+
+        .unsuccess-card {
+            width: min(520px,100%);
+            border: 1px solid var(--gold2);
+            border-radius: 20px;
+            background: linear-gradient(145deg, rgba(20, 14, 20, .95), rgba(10, 10, 14, .96));
+            padding: 34px 38px 28px;
+            min-height: 500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 24px 70px rgba(0,0,0,.35);
+        }
+
+        .unsuccess-icon {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #ff5b5b;
+            color: #fff;
+            font-size: 42px;
+            font-weight: 700;
+            animation: failPulse 1.8s ease-in-out infinite;
+        }
+
+        .unsuccess-card h1 {
+            margin: 0 0 10px;
+            font-size: 30px;
+        }
+
+        .unsuccess-card p {
+            margin: 0 auto 24px;
+            max-width: 420px;
+            line-height: 1.6;
+            opacity: .78;
+        }
+
+        .unsuccess-details {
+            display: grid;
+            gap: 10px;
+            text-align: left;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            padding: 18px 0;
+            margin-bottom: 24px;
+            width: 80%;
+        }
+
+        .unsuccess-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            font-size: 14px;
+        }
+
+            .unsuccess-row span {
+                opacity: .62;
+            }
+
+            .unsuccess-row strong {
+                text-align: right;
+            }
+
+        .try-again-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            min-height: 48px;
+            margin: 22px auto 0;
+            padding: 12px 20px;
+            border: 1px solid var(--gold2);
+            border-radius: 12px;
+            background: var(--gold2);
+            color: #111;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .18s ease, filter .18s ease;
+        }
+
+        .try-again-btn:hover {
+            filter: brightness(1.05);
+            transform: translateY(-1px);
+        }
+
+        .try-again-btn:active {
+            transform: translateY(0);
+        }
+
+        .unsuccess-logo {
+            width: 125px;
+            margin-top: 24px;
+        }
+
+        @keyframes failPulse {
+            0%,100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255,91,91,.28);
+            }
+
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 0 0 12px rgba(255,91,91,0);
+            }
+        }
+
+        @media(max-width:600px) {
+            .unsuccess-page {
+                padding: 20px 14px;
+            }
+
+            .unsuccess-card {
+                padding: 34px 20px;
+                border-radius: 18px;
+            }
+
+                .unsuccess-card h1 {
+                    font-size: 25px;
+                }
+
+            .unsuccess-row {
+                font-size: 13px;
+            }
+
+            .try-again-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="unsuccess-page">
+        <section class="unsuccess-card">
+            <div class="unsuccess-icon">×</div>
+            <h1>Payment Unsuccessful</h1>
+            <p>We could not confirm your payment within the allowed payment time. Please try again.</p>
+            <div class="unsuccess-details">
+                <div class="unsuccess-row"><span>Payment Method</span><strong>DuitNow QR</strong></div>
+                <div class="unsuccess-row"><span>Payment Channel</span><strong>VADERPAY</strong></div>
+                <div class="unsuccess-row"><span>Amount</span><strong>RM 50.00</strong></div>
+            </div>
+            <p style="font-size:13px;margin-bottom:0">If the amount was deducted from your bank account, please contact Customer Service with your transaction reference.</p>
+            <a class="try-again-btn" href="index.html">Try Again</a>
+            <img class="unsuccess-logo" src="assets/payment_gateway/logo-vaderpay.svg" alt="VADERPAY">
+        </section>
+    </div>
+</body>
+</html>

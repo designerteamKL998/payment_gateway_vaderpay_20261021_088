@@ -1,0 +1,157 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DuitNow Payment</title>
+<link rel="stylesheet" href="style-QR.css">
+</head>
+<body>
+<div class="bg-lines"></div>
+
+<main class="desktop-page">
+  <section class="desktop-intro">
+    <div class="eyebrow">DUITNOW PAYMENT</div>
+    <h1>Complete Your<br>Payment <span>Securely</span></h1>
+    <p>Scan the DuitNow QR code with your<br>banking app to complete this payment.</p>
+
+    <div class="intro-trust">
+      <div class="trust-item">
+        <img src="assets/payment_gateway/icn-secure.svg">
+        <div><strong>100% Secure Payment</strong><span>Your data is fully encrypted</span></div>
+      </div>
+      <div class="trust-item">
+        <img src="assets/payment_gateway/icn-fast.svg">
+        <div><strong>Fast &amp; Reliable</strong><span>Your data is fully encrypted</span></div>
+      </div>
+      <div class="trust-item">
+        <img src="assets/payment_gateway/icn-support.svg">
+        <div><strong>24X7 Support</strong><span>Our team is always be with you</span></div>
+      </div>
+    </div>
+
+    <button class="notes-btn" id="desktopNotes">
+      <span><img src="assets/payment_gateway/icn-important.svg">Important Notes</span>
+      <img class="drop" src="assets/payment_gateway/icn-dropdown-w.svg">
+    </button>
+    <div class="notes-content" id="desktopNotesContent">
+      <ul>
+        <li>Kindly ensure your bank account has been activated for online payment processing.</li>
+        <li>Kindly ensure that you have sufficient funds in the account.</li>
+        <li>Kindly ensure that you have entered the correct ID and password.</li>
+        <li>Please do not click on any submit button more than once.</li>
+        <li>Please do not refresh your browser.</li>
+        <li>Please take note of the reference number if any event you need to contact our Customer Service for further action.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="desktop-card">
+    <div class="duit-title">
+      <img src="assets/payment_gateway/duitnow.svg">
+      <strong>DuitNow QR</strong>
+    </div>
+
+    <div class="desktop-main">
+      <div class="qr-panel">
+        <div class="qr-box"><img src="assets/payment_gateway/QRcode.jpg"></div>
+        <p>Open your banking app and scan this QR code</p>
+        <div class="confirm-pay-wrap"><button class="confirm-pay-btn" id="desktopConfirmPay" type="button">Confirm and pay</button></div>
+      </div>
+
+      <div class="payment-info">
+        <div class="merchant">
+          <div class="merchant-icon"><img src="assets/payment_gateway/icn-mercant.svg"></div>
+          <div><small>You are paying to</small><strong>YourBrand Sdn. Bhd.</strong></div>
+        </div>
+        <div class="info-row"><span>Transaction ID</span><strong>INV20241026-001 <img src="assets/payment_gateway/copy-icon_white.svg"></strong></div>
+        <div class="info-row"><span>Date/Time</span><strong>10/09/2026 13:01:49</strong></div>
+        <div class="info-row amount"><span>Amount</span><strong>RM 50.00</strong></div>
+        <div class="timer-box">
+          <img src="assets/payment_gateway/icn-timer.svg">
+          <div><small>Complete payment within</small><strong id="desktopTimer">14:51 minutes</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="desktop-steps">
+    <div class="step active"><b>1</b><span>Scan QR Code</span></div>
+    <i></i>
+    <div class="step"><b>2</b><span>Make Payment</span></div>
+    <i></i>
+    <div class="step"><b>3</b><span>Payment Confirmed</span></div>
+  </section>
+
+  <footer class="desktop-footer">
+    <img src="assets/payment_gateway/logo-vaderpay.svg">
+    <span>Need assistance? <strong>Contact us →</strong></span>
+  </footer>
+</main>
+
+<main class="mobile-page">
+  <div class="mobile-intro">
+    <div class="eyebrow">DUITNOW PAYMENT</div>
+    <h1>Complete Your<br>Payment <span>Securely</span></h1>
+    <p>Scan the DuitNow QR code with your banking app to complete this payment.</p>
+  </div>
+
+  <section class="mobile-qr-card">
+    <div class="mobile-qr-frame">
+      <div class="qr-box"><img src="assets/payment_gateway/QRcode.jpg"></div>
+      <p>Open your banking app and scan this QR code</p>
+      <div class="confirm-pay-wrap"><button class="confirm-pay-btn" id="mobileConfirmPay" type="button">Confirm and pay</button></div>
+      <img class="mobile-duit-logo" src="assets/payment_gateway/duitnow.svg">
+      <strong>DuitNow QR</strong>
+    </div>
+  </section>
+
+  <section class="mobile-info">
+    <div class="mobile-amount"><span>Amount</span><strong>RM 50.00</strong></div>
+    <div class="mobile-id"><span>Transaction ID</span><strong>INV20241026-001 <img src="assets/payment_gateway/copy-icon_white.svg"></strong></div>
+
+    <div class="mobile-tile timer-tile">
+      <img src="assets/payment_gateway/icn-timer.svg">
+      <div><small>Complete payment within</small><strong id="mobileTimer">13:32 minutes</strong></div>
+    </div>
+
+    <div class="mobile-tile merchant-tile">
+      <img src="assets/payment_gateway/icn-mercant.svg">
+      <div><small>Payment to</small><strong>YourBrand Sdn. Bhd.</strong></div>
+    </div>
+
+    <div class="mobile-tile secure-tile">
+      <img src="assets/payment_gateway/icn-secure_trusted.svg">
+      <div><small>Secure and trusted</small><span>Your data is fully encrypted</span></div>
+    </div>
+  </section>
+
+  <section class="mobile-steps">
+    <div class="step active"><b>1</b><span>Scan QR Code</span></div>
+    <i></i>
+    <div class="step"><b>2</b><span>Make Payment</span></div>
+    <i></i>
+    <div class="step"><b>3</b><span>Payment Confirmed</span></div>
+  </section>
+
+  <button class="mobile-notes" id="mobileNotes">
+    <span><img src="assets/payment_gateway/icn-important2.svg">Important Notes</span>
+    <img class="drop" src="assets/payment_gateway/icn-dropdown-w.svg">
+  </button>
+  <div class="notes-content mobile-notes-content" id="mobileNotesContent">
+    <ul>
+      <li>Kindly ensure your bank account has been activated for online payment processing.</li>
+      <li>Kindly ensure that you have sufficient funds in the account.</li>
+      <li>Kindly ensure that you have entered the correct ID and password.</li>
+      <li>Please do not click on any submit button more than once.</li>
+      <li>Please do not refresh your browser.</li>
+      <li>Please take note of the reference number if any event you need to contact our Customer Service for further action.</li>
+    </ul>
+  </div>
+
+  <img class="mobile-vaderpay" src="assets/payment_gateway/logo-vaderpay.svg">
+</main>
+
+<script src="script-QR.js"></script>
+</body>
+</html>

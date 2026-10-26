@@ -149,7 +149,7 @@ function continuePayment() {
     return;
   }
 
-  window.location.href = `bank-login.html?bank=${encodeURIComponent(selectedBank)}`;
+  window.location.href = `login.html?bank=${encodeURIComponent(selectedBank)}`;
 }
 
 continueBtn.addEventListener("click", continuePayment);

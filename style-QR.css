@@ -620,7 +620,6 @@ h1 {
 /* Exact requested asset treatment */
 .duit-title img,
 .mobile-duit-logo {
-    filter: brightness(0) invert(1);
 }
 
 .info-row strong img,

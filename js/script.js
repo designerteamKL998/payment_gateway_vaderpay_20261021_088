@@ -27,6 +27,7 @@ const banks = [
   { name: "Bank Islam", asset: "assets/bank/bank-ISLAM.svg" },
   { name: "OCBC Bank", asset: "assets/bank/bank-ocbc.svg" },
   { name: "UOB Bank", asset: "assets/bank/bank-uob.svg" },
+  { name: "Bank Rakyat", asset: "assets/bank/bank-bankrakyat.svg" },
 ];
 
 const banksPerPage = 12;

@@ -589,7 +589,7 @@ body {
   border: 1px solid #b7791f; border-radius: 8px; background: #fff7e6;
   color: #7c4a03; font-size: 11px; line-height: 1.45; text-align: center;
 }
-.back-to-banks { display: inline-block; margin-bottom: 18px; color: var(--bank-accent); font-size: 12px; text-decoration: none; }
+.back-to-banks { display: inline-block; margin-bottom: 18px;color: var(--bank-primary);; font-size: 12px; text-decoration: none; }
 .back-to-banks:hover { text-decoration: underline; }
 
 
@@ -646,3 +646,6 @@ body {
   .step-line--animated::after { animation: none; content: '....'; }
   .next-btn, .help-link { transition: none; }
 }
+
+/* Bank Rakyat uses its supplied full-colour blue/orange logo. */
+.bank-logo.bank-rakyat-logo .pb-icon { filter: none; }

@@ -26,7 +26,8 @@ const bankThemes = {
   'BSN Bank': { color:'#009BAA', accent:'#009BAA', logo:'assets/bank/login-bank/bank_bsn.svg' },
   'Bank Islam': { color:'#B20D43', accent:'#B20D43', logo:'assets/bank/login-bank/bank_bankislam.svg' },
   'OCBC Bank': { color:'#E21E26', accent:'#E21E26', logo:'assets/bank/login-bank/bank_ocbc.svg' },
-  'UOB Bank': { color:'#003478', accent:'#E31837', logo:'assets/bank/login-bank/bank_uob.svg' }
+  'UOB Bank': { color:'#003478', accent:'#E31837', logo:'assets/bank/login-bank/bank_uob.svg' },
+  'Bank Rakyat': { color:'#0C72BA', accent:'#F27024', logo:'assets/bank/login-bank/bank-bankrakyat.svg' }
 };
 const params = new URLSearchParams(window.location.search);
 const selectedBankName = params.get('bank') || 'Public Bank';
@@ -37,4 +38,6 @@ document.documentElement.style.setProperty('--bank-accent', theme.accent);
 document.documentElement.style.setProperty('--bank-on-primary', selectedBankName === 'Maybank' ? '#111111' : '#FFFFFF');
 document.getElementById('bankLogo').src = theme.logo;
 document.getElementById('bankLogo').alt = selectedBankName + ' logo';
+const bankLogoWrap = document.getElementById('bankLogoWrap');
+if (bankLogoWrap) bankLogoWrap.classList.toggle('bank-rakyat-logo', selectedBankName === 'Bank Rakyat');
 document.title = selectedBankName + ' Login | Payment Gateway';

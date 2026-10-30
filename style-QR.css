@@ -190,8 +190,8 @@ h1 {
 }
 
     .duit-title img {
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
         display: block;
         margin: auto;
         object-fit: contain;
@@ -620,6 +620,9 @@ h1 {
 /* Exact requested asset treatment */
 .duit-title img,
 .mobile-duit-logo {
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .info-row strong img,
